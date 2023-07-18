@@ -81,7 +81,7 @@ public class Board extends World
             if (index >= MaxIndex) {
                 index = 0;
                 waitingForInput = true; 
-                System.out.println("go");
+             //   System.out.println("go");
             } 
         }
     }
@@ -93,14 +93,14 @@ public class Board extends World
             index = 0; 
             waitingForInput = false;
             Greenfoot.stop();
-            System.out.println("Incorrect");
+           // System.out.println("Incorrect");
         }
         
         if (index >= MaxIndex ) { // all correct 
             MaxIndex++;
             index = 0;
             waitingForInput = false;
-            System.out.println("Correct: "+(MaxIndex-1));
+           // System.out.println("Correct: "+(MaxIndex-1));
             Greenfoot.delay(30);
         }
     }
